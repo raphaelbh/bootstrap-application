@@ -1,10 +1,10 @@
 # Bootstrap Application
 
 [![Project Status](https://img.shields.io/static/v1?label=project%20status&message=complete&color=success&style=flat-square)](#)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/raphaelbh/bootstrap-application/workflow?style=flat-square)](#)
 [![GitHub License](https://img.shields.io/github/license/raphaelbh/bootstrap-application?style=flat-square)](#)
 
 Project created to run the startup of an application.
+
 https://hub.docker.com/repository/docker/raphaelbh/bootstrap-application
 
 You can create:
@@ -37,8 +37,6 @@ It is expected that inside this folder there is a file called `start.sh` that wi
 
 If you want to start the bootstrap process from another file, you must add an environment variable with the path of the file:
 `START_SCRIPT=./test/start.sh`
-
-PS: Other files may exist within the folder
 
 ```bash
 $ docker run -v $(pwd)/sample/bootstrap:/bootstrap/data raphaelbh/bootstrap-application
