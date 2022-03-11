@@ -24,23 +24,23 @@ Installed tools:
 ## Installation
 
 ```bash
-$ docker build -t raphaelbh/bootstrap-application:latest .
+$ docker build -t raphaelbh/bootstrap:latest .
 ```
 
 ## Usage
 
 A folder with the initialization scripts must be informed through a volume:
-`{your_folder}:/bootstrap/data`
+`{your_folder}:/bootstrap`
 
-It is expected that inside this folder there is a file called `start.sh` that will be automatically executed.
+It is expected that inside this folder there is a file called `run.sh` that will be automatically executed.
 
 If you want to start the bootstrap process from another file, you must add an environment variable with the path of the file:
-`START_SCRIPT=./test/start.sh`
+`START_SCRIPT=./test/run.sh`
 
 ```bash
-$ docker run -v $(pwd)/sample/bootstrap:/bootstrap/data raphaelbh/bootstrap-application
+$ docker run -v $(pwd)/sample/bootstrap:/bootstrap raphaelbh/bootstrap
 or
-$ docker run -v $(pwd)/sample/bootstrap:/bootstrap/data -e START_SCRIPT=./test/start.sh raphaelbh/bootstrap-application
+$ docker run -v $(pwd)/sample/bootstrap:/bootstrap -e START_SCRIPT=./test/start.sh raphaelbh/bootstrap
 ```
 
 ## Environment Variables
@@ -54,7 +54,7 @@ $ docker run -v $(pwd)/sample/bootstrap:/bootstrap/data -e START_SCRIPT=./test/s
 
 ## Reference
 
-- https://hub.docker.com/_/ubuntu
+- https://hub.docker.com/_/alpine
 
 ## Feedback
 
