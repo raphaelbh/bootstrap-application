@@ -3,8 +3,8 @@ version: "3.8"
 services:
   bootstrap:
     container_name: bootstrap
-    image: raphaelbh/bootstrap-application
+    image: raphaelbh/bootstrap
     #environment:
     #  - START_SCRIPT=./test/start.sh
     volumes:
-      - ./bootstrap:/bootstrap/data
+      - ./bootstrap:/bootstrap
