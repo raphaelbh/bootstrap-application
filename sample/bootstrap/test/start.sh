@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "[prod] my bootstrap script!!!"
+echo "[test] my bootstrap script!!!"
