@@ -4,7 +4,7 @@
 
 Project created to run the startup of an application.
 
-https://hub.docker.com/repository/docker/raphaelbh/bootstrap-application
+https://hub.docker.com/repository/docker/raphaelbh/bootstrap
 
 You can create:
 - infrastructure/resources
